@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<abbreviations>
+    <abbreviation>
+        <initials>Abrev.</initials>
+        <meaning>abreviatura</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>a. C.</initials>
+        <meaning>antes do Chrísto</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Açor.</initials>
+        <meaning>termo açoreano</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Adj.</initials>
+        <meaning>adjectivo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Adj. f.</initials>
+        <meaning>adjectivo feminino</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Adv.</initials>
+        <meaning>adverbio</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Afr.</initials>
+        <meaning>africano</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Agr.</initials>
+        <meaning>termo de Agricultura</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>al.</initials>
+        <meaning>alemão</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>alat.</initials>
+        <meaning>alatinado</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>alt. al.</initials>
+        <meaning>alto alemão</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>alter.</initials>
+        <meaning>alteração</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Anat.</initials>
+        <meaning>termo de Anatomia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Angl.</initials>
+        <meaning>Anglicismo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>angl. sax.</initials>
+        <meaning>anglo saxão</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Ant.</initials>
+        <meaning>termo antigo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>ant. alt. al.</initials>
+        <meaning>antigo alto alemão</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Anthrop.</initials>
+        <meaning>Anthropologia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>apher.</initials>
+        <meaning>aphérese</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>ár.</initials>
+        <meaning>árabe</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Arith.</initials>
+        <meaning>termo de Arithmética</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>art. def.</initials>
+        <meaning>artigo definido</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Artilh.</initials>
+        <meaning>termo de Artilharia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>as.</initials>
+        <meaning>termo asiático</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Arm.</initials>
+        <meaning>termo de Armaria</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Astrol.</initials>
+        <meaning>termo de Astrologia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>aum.</initials>
+        <meaning>aumentativo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Bacter.</initials>
+        <meaning>termo de Bacteriologia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>berb.</initials>
+        <meaning>berbere</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Bibl. Nac.</initials>
+        <meaning>Bibliotheca Nacional</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Biol.</initials>
+        <meaning>termo de Biologia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>b. lat.</initials>
+        <meaning>baixo latim</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>borg.</initials>
+        <meaning>borgonhês</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Bot.</initials>
+        <meaning>termo de Botânica</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Bras.</initials>
+        <meaning>termo brasileiro</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>bret.</initials>
+        <meaning>bretão</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Burl.</initials>
+        <meaning>termo burlesco</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Caboverd.</initials>
+        <meaning>termo caboverdeano</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>car.</initials>
+        <meaning>caraíba</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Carp.</initials>
+        <meaning>termo de Carpintaria</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>carth.</initials>
+        <meaning>carthaginês</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>cast.</initials>
+        <meaning>castelhano</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>celt.</initials>
+        <meaning>céltico</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Cf.</initials>
+        <meaning>confira</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>chancell.</initials>
+        <meaning>chancellaria</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Chapel.</initials>
+        <meaning>termo de Chapelaria</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>chil.</initials>
+        <meaning>chileno</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>chin.</initials>
+        <meaning>chinês</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Chul.</initials>
+        <meaning>termo chulo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Chron.</initials>
+        <meaning>termo de Chronologia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Cir.</initials>
+        <meaning>termo de Cirurgia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>cit.</initials>
+        <meaning>citado</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>comp.</initials>
+        <meaning>comparativo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>conc.</initials>
+        <meaning>concani</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>cong.</initials>
+        <meaning>conguês</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>conj.</initials>
+        <meaning>conjuncção</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Constr.</initials>
+        <meaning>termo de construcção</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>contr.</initials>
+        <meaning>contracção</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>corr.</initials>
+        <meaning>corruptela</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Cp.</initials>
+        <meaning>compare</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Cutel.</initials>
+        <meaning>termo de Cutelaria</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Cyn.</initials>
+        <meaning>termo de Cynegética</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>def.</initials>
+        <meaning>defectivo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>defin.</initials>
+        <meaning>definido</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>dem.</initials>
+        <meaning>deminutivo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>demonstr.</initials>
+        <meaning>demonstrativo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>der.</initials>
+        <meaning>derivado; derivação</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>des.</initials>
+        <meaning>desusado</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>deprec.</initials>
+        <meaning>depreciativo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>diccion.</initials>
+        <meaning>diccionário; diccionarista,</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>din.</initials>
+        <meaning>dinamarquês</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>doc.</initials>
+        <meaning>documento</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>eccles.</initials>
+        <meaning>ecclesiastico</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Econ. polít.</initials>
+        <meaning>termo de Economia Política</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>ed.</initials>
+        <meaning>edição</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>egýp.</initials>
+        <meaning>egýpcio</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Enol.</initials>
+        <meaning>termo de Enologia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Entom.</initials>
+        <meaning>termo de Entomologia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Equit.</initials>
+        <meaning>termo de Equitação</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>escand.</initials>
+        <meaning>escandinavo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>escoc.</initials>
+        <meaning>escocês</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Escol.</initials>
+        <meaning>termo escolar</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Espir.</initials>
+        <meaning>termo de espiritismo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>etym.</initials>
+        <meaning>etymologia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>ex.</initials>
+        <meaning>exemplo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>ext.</initials>
+        <meaning>em sentido extensivo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Extrem.</initials>
+        <meaning>extremenho</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>euphon.</initials>
+        <meaning>euphonia; euphónico</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>f.</initials>
+        <meaning>substantivo feminino</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>f. ou fol.</initials>
+        <meaning>fôlha</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>fam.</initials>
+        <meaning>família; termo ou expressão familiar</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>fem.</initials>
+        <meaning>flexão feminina</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>fig.</initials>
+        <meaning>em sentido figurado</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Fin.</initials>
+        <meaning>termo de Finanças</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>flam.</initials>
+        <meaning>flamengo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>flex.</initials>
+        <meaning>flexão</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>fr.</initials>
+        <meaning>francês</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>freq.</initials>
+        <meaning>verbo frequentativo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Gal.</initials>
+        <meaning>gallicismo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Gall.</initials>
+        <meaning>gallego</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>gên.</initials>
+        <meaning>gênero</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Geneal.</initials>
+        <meaning>termo de Genealogia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Geod.</initials>
+        <meaning>termo de Geodesia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Geogr.</initials>
+        <meaning>termo de Geographia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Geol.</initials>
+        <meaning>termo de Geologia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Geom.</initials>
+        <meaning>termo de Geometria</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>germ.</initials>
+        <meaning>germânico</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Gír.</initials>
+        <meaning>termo de gíria</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Glot.</initials>
+        <meaning>termo de Glóttica</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>got.</initials>
+        <meaning>gótico</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>gr.</initials>
+        <meaning>grego</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Gram.</initials>
+        <meaning>termo de Grammática</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>guar.</initials>
+        <meaning>guarani</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>hebr.</initials>
+        <meaning>hebreu</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Heráld.</initials>
+        <meaning>termo de Heráldica</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>hind.</initials>
+        <meaning>hindustani</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Hist. Nat.	 termo de Hist.</initials>
+        <meaning>Natural</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>holl.</initials>
+        <meaning>hollandês</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>hung.</initials>
+        <meaning>húngaro</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>hybr.</initials>
+        <meaning>hýbrido</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Hydrogr.</initials>
+        <meaning>termo de Hydrographia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>hyp.</initials>
+        <meaning>hypothético</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Icht.</initials>
+        <meaning>termo de Ichthyologia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>id.</initials>
+        <meaning>idem</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>imper.</initials>
+        <meaning>imperativo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>impess.</initials>
+        <meaning>impessoal</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>impropr.</initials>
+        <meaning>em sentido impróprio</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>inch.</initials>
+        <meaning>verbo inchoativo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>ind.</initials>
+        <meaning>termo indiano</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>inf.</initials>
+        <meaning>termo infantil</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>infl.</initials>
+        <meaning>influência</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>ingl.</initials>
+        <meaning>inglês</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>interj.</initials>
+        <meaning>interjeição</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>interrog.</initials>
+        <meaning>interrogação</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>iron.</initials>
+        <meaning>ironia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>it.</initials>
+        <meaning>italiano</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Ital.</initials>
+        <meaning>italianismo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>jap.</initials>
+        <meaning>japonês</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>jav.</initials>
+        <meaning>javanês</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Jur.</initials>
+        <meaning>termo de Jurisprudência</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>kilogr.</initials>
+        <meaning>kilogramma</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>lat.</initials>
+        <meaning>latim</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>lat. barb.</initials>
+        <meaning>latim bárbaro</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>lat. bot.</initials>
+        <meaning>latim botânico</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>lisb.</initials>
+        <meaning>lisboêta</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Lit.</initials>
+        <meaning>Literatura</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>loc.</initials>
+        <meaning>locução</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>loc. adv.</initials>
+        <meaning>locução adverbial</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>loc. conj.</initials>
+        <meaning>locução conjunccional</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>loc. prep.</initials>
+        <meaning>locução prepositiva</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>loc. pron.</initials>
+        <meaning>locução pronominal</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>lund.</initials>
+        <meaning>lundês</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>m.</initials>
+        <meaning>substantivo masculino</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Mad.</initials>
+        <meaning>termo da ilha da Madeira</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>mal.</initials>
+        <meaning>malaio</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>malab.</initials>
+        <meaning>malabárico</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Marcen.</initials>
+        <meaning>termo de Marcenaria</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Marn.</initials>
+        <meaning>termo de marnotos</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Mathem.</initials>
+        <meaning>termo de Mathemática</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Med.</initials>
+        <meaning>termo do Medicina</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>med.</initials>
+        <meaning>lat</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>metáth.</initials>
+        <meaning>metáthese</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>mex.</initials>
+        <meaning>mexicano</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Mil.</initials>
+        <meaning>termo militar</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Miner.</initials>
+        <meaning>termo de Mineralogia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>mod.</initials>
+        <meaning>moderno</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>ms.</initials>
+        <meaning>manuscrito</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Mús.</initials>
+        <meaning>termo de Música</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>myth.</initials>
+        <meaning>mythológico</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>n.</initials>
+        <meaning>nome</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>N.</initials>
+        <meaning>Norte</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Náut.</initials>
+        <meaning>termo de Náutica</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>neerl.</initials>
+        <meaning>neerlandês</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>neol.</initials>
+        <meaning>neologismo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>nord.</initials>
+        <meaning>nórdico</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>norm.</initials>
+        <meaning>normando</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>n. p.</initials>
+        <meaning>nome próprio</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>num.</initials>
+        <meaning>numeral</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>obsol.</initials>
+        <meaning>obsoleto</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>onom.</initials>
+        <meaning>onomatopeia; onomatopaico</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Ópt.</initials>
+        <meaning>termo de Óptica</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>or.</initials>
+        <meaning>origem</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Ornit.</initials>
+        <meaning>Ornithologia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>orthogr.</initials>
+        <meaning>orthographia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>p.</initials>
+        <meaning>página</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>part.</initials>
+        <meaning>particípio</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>part. irr.</initials>
+        <meaning>particípio irregular</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Pathol.</initials>
+        <meaning>termo de Pathologia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>pers.</initials>
+        <meaning>persa</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>peruv.</initials>
+        <meaning>peruviano</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Pesc.</initials>
+        <meaning>termo de Pescaria</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>pess.</initials>
+        <meaning>pessôa (verbal)</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Pharm.</initials>
+        <meaning>termo de Pharmacia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Philol.</initials>
+        <meaning>termo de Philologia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Phot.</initials>
+        <meaning>termo de Photographia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Phýs.</initials>
+        <meaning>termo de Phýsica</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Physiol.</initials>
+        <meaning>termo de Physiologia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Pint.</initials>
+        <meaning>termo de Pintura</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>pl.</initials>
+        <meaning>plural</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>pleb.</initials>
+        <meaning>plebeísmo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>poet.</initials>
+        <meaning>termo poético</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>pol.</initials>
+        <meaning>polaco</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>pop.</initials>
+        <meaning>termo popular</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>port.</initials>
+        <meaning>português</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>pov.</initials>
+        <meaning>povoação</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>pref.</initials>
+        <meaning>prefixo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>prep.</initials>
+        <meaning>preposição</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>pron.</initials>
+        <meaning>pronome</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>pron. ind.</initials>
+        <meaning>pronome indefinido</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>prop.</initials>
+        <meaning>próprio</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>prov.</initials>
+        <meaning>provincianismo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Prov. alent.</initials>
+        <meaning>provincianismo alentejano</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Prov. alg.</initials>
+        <meaning>provincianismo algarvio</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Prov. beir.</initials>
+        <meaning>provincianismo beirão</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Prov. dur.</initials>
+        <meaning>provincianismo duriense</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Prov. extr.</initials>
+        <meaning>provincianismo extremenho</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Prov. minh.</initials>
+        <meaning>provincianismo minhoto</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Prov. trasm.</initials>
+        <meaning>provincianismo trasmontano</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>provn.</initials>
+        <meaning>provençal</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>p. us.</initials>
+        <meaning>pouco usado</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>qual.</initials>
+        <meaning>qualificativo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>quimb.</initials>
+        <meaning>quimbundo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>rad.</initials>
+        <meaning>radical</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>refl.</initials>
+        <meaning>reflexo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>restrict.</initials>
+        <meaning>em sentido restricto</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>rev.</initials>
+        <meaning>revista</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>S.</initials>
+        <meaning>Sul</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Sal.</initials>
+        <meaning>termo de salinas</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>séc.</initials>
+        <meaning>século</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>seg.</initials>
+        <meaning>seguinte; seguido</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>sent.</initials>
+        <meaning>sentido</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Serr.</initials>
+        <meaning>termo de Serralharia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>sign.</initials>
+        <meaning>significação</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>sing.</initials>
+        <meaning>singular</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>subst.</initials>
+        <meaning>substantivo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>suf.</initials>
+        <meaning>suffixo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>suf. v.</initials>
+        <meaning>suffixo verbal</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>sup.</initials>
+        <meaning>superlativo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Supplem.</initials>
+        <meaning>Supplemento</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>syr.</initials>
+        <meaning>syríaco</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>t.</initials>
+        <meaning>termo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Taur.</initials>
+        <meaning>termo da Tauromaquia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Terat.</initials>
+        <meaning>termo de Teratologia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Theol.</initials>
+        <meaning>termo de Theologia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>thibet.</initials>
+        <meaning>thibetano</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Topogr.</initials>
+        <meaning>termo de Topographia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>turc.</initials>
+        <meaning>turco</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>unif.</initials>
+        <meaning>unifórme</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>us.</initials>
+        <meaning>usado</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>V.</initials>
+        <meaning>Veja</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>v.</initials>
+        <meaning>verbo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>vasc.</initials>
+        <meaning>vasconço</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>vb.</initials>
+        <meaning>verbò</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>veloc.</initials>
+        <meaning>termo de velocipedia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>ven.</initials>
+        <meaning>termo venatório</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>verb.</initials>
+        <meaning>verbal</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>vers.</initials>
+        <meaning>versificação</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Veter.</initials>
+        <meaning>termo de Veterinária</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>v. g.</initials>
+        <meaning>verbi-gratia</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>v. i.</initials>
+        <meaning>verbo intransitivo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>vin.</initials>
+        <meaning>termo de vinificação</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Vit.</initials>
+        <meaning>termo de Vinicultura</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>vº	 versò.</initials>
+        <meaning></meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>voc.</initials>
+        <meaning>vocábulo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>v. p. ou v. pron.</initials>
+        <meaning>verbo pronominal</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>vulg.</initials>
+        <meaning>vulgar</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>v. t.</initials>
+        <meaning>verbo transitivo</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>zend.</initials>
+        <meaning>zenda</meaning>
+    </abbreviation>
+    <abbreviation>
+        <initials>Zool.</initials>
+        <meaning>termo de Zoologia</meaning>
+    </abbreviation>
+</abbreviations>
