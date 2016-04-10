@@ -2,15 +2,21 @@
     <string name="app_name">AudioDic</string>
     <string name="edit_text_search_default">Pesquisar a palavra...</string>
     <string name="button_search">Pesquisar!</string>
-    <string name="item_search">Pesquisar</string>
-    <string name="item_menu">Menu</string>
-    <string name="item_menu_help">Ajuda</string>
-    <string name="item_menu_abbreviations">Siglas e Abreviações</string>
-    <string name="item_menu_configurations">Configurações</string>
-    <string name="item_menu_about">Sobre o Aplicativo</string>
+    <string name="menu_item_search">Pesquisar</string>
+    <string name="menu_item_menu">Menu</string>
+    <string name="menu_item_help">Ajuda</string>
+    <string name="menu_item_abbreviations">Siglas e Abreviações</string>
+    <string name="menu_item_configurations">Configurações</string>
+    <string name="menu_item_about">Sobre o Aplicativo</string>
+    <string name="menu_item_back">Voltar</string>
 
     <!-- content description -->
     <string name="edit_text_search_content_description">Campo de entrada para pesquisar palavra.</string>
     <string name="button_search_description">Botão para pesquisar a palavra do campo de entrada.</string>
 
+    <!-- Activities label -->
+    <string name="title_activity_help">AudioDic - Ajuda</string>
+    <string name="title_activity_abbreviations">AudioDic - Siglas e Abreviações</string>
+    <string name="title_activity_settings">AudioDic - Configurações</string>
+    <string name="title_activity_about">AudioDic - Sobre o Aplicativo</string>
 </resources>

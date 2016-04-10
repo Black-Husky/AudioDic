@@ -114,6 +114,7 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
+        Intent intent;
         switch (item.getItemId()) {
             case R.id.itemSearch:
                 if(linearLayoutSearch.getVisibility() == View.GONE) {
@@ -124,6 +125,22 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
                     linearLayoutSearch.setVisibility(View.GONE);
                     textViewWordWanted.setVisibility(View.VISIBLE);
                 }
+                return true;
+            case R.id.menuItemHelp:
+                intent = new Intent(this, HelpActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.menuItemAbbreviations:
+                intent = new Intent(this, AbbreviationsActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.menuItemSettings:
+                intent = new Intent(this, SettingsActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.menuItemAbout:
+                intent = new Intent(this, AboutActivity.class);
+                startActivity(intent);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

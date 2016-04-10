@@ -3,24 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/itemSearch"
         android:icon="@drawable/abc_ic_search_api_mtrl_alpha"
-        android:title="@string/item_search"
+        android:title="@string/menu_item_search"
         app:showAsAction="always"/>
-    <item android:id="@+id/itemMenu"
+    <item android:id="@+id/menuItem"
         android:icon="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
-        android:title="@string/item_menu"
+        android:title="@string/menu_item_menu"
         app:showAsAction="always">
         <menu>
-            <item android:id="@+id/itemMenuHelp"
+            <item android:id="@+id/menuItemHelp"
                 android:icon="@drawable/ic_help_outline_white_24dp"
-                android:title="@string/item_menu_help"/>
-            <item android:id="@+id/itemMenuAbbreviations"
-                android:title="@string/item_menu_abbreviations"
+                android:title="@string/menu_item_help"/>
+            <item android:id="@+id/menuItemAbbreviations"
+                android:title="@string/menu_item_abbreviations"
                 android:icon="@drawable/ic_spellcheck_white_24dp"/>
-            <item android:id="@+id/itemMenuConfigurations"
-                android:title="@string/item_menu_configurations"
+            <item android:id="@+id/menuItemSettings"
+                android:title="@string/menu_item_configurations"
                 android:icon="@drawable/ic_settings_white_24dp"/>
-            <item android:id="@+id/itemMenuAbout"
-                android:title="@string/item_menu_about"
+            <item android:id="@+id/menuItemAbout"
+                android:title="@string/menu_item_about"
                 android:icon="@drawable/ic_error_outline_white_24dp"/>
         </menu>
     </item>
