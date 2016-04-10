@@ -8,5 +8,20 @@
     <item android:id="@+id/itemMenu"
         android:icon="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
         android:title="@string/item_menu"
-        app:showAsAction="always"/>
+        app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/itemMenuHelp"
+                android:icon="@drawable/ic_help_outline_white_24dp"
+                android:title="@string/item_menu_help"/>
+            <item android:id="@+id/itemMenuAbbreviations"
+                android:title="@string/item_menu_abbreviations"
+                android:icon="@drawable/ic_spellcheck_white_24dp"/>
+            <item android:id="@+id/itemMenuConfigurations"
+                android:title="@string/item_menu_configurations"
+                android:icon="@drawable/ic_settings_white_24dp"/>
+            <item android:id="@+id/itemMenuAbout"
+                android:title="@string/item_menu_about"
+                android:icon="@drawable/ic_error_outline_white_24dp"/>
+        </menu>
+    </item>
 </menu>

@@ -4,6 +4,10 @@
     <string name="button_search">Pesquisar!</string>
     <string name="item_search">Pesquisar</string>
     <string name="item_menu">Menu</string>
+    <string name="item_menu_help">Ajuda</string>
+    <string name="item_menu_abbreviations">Siglas e Abreviações</string>
+    <string name="item_menu_configurations">Configurações</string>
+    <string name="item_menu_about">Sobre o Aplicativo</string>
 
     <!-- content description -->
     <string name="edit_text_search_content_description">Campo de entrada para pesquisar palavra.</string>

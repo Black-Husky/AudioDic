@@ -4,8 +4,8 @@ package br.com.fatec.audiodic;
 
 import android.animation.LayoutTransition;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
-import android.content.res.XmlResourceParser;
 import android.os.Bundle;
 import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
@@ -31,30 +31,22 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TabHost;
 import android.widget.TextView;
+
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import org.json.JSONArray;
-import org.json.JSONObject;
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
 
-import java.io.IOException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Locale;
-import java.util.Map;
 //End of imports
 
 public class MainActivity extends AppCompatActivity implements RecognitionListener {
-
-    //Setting abbreviations
-    private Map<String, String> abbreviations = new HashMap<String, String>();
-    //End setting abbreviations
 
     //Setting common variables
     private Intent recognizerIntent;
@@ -63,6 +55,8 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
     private int transitionTime = 300;
     public TextToSpeech textToSpeech;
     final Locale myLocale = new Locale("pt", "BR");
+    DicionarioAbertoWord dicionarioAbertoWord;
+    private Context mainContext;
     //End of Setting common variables
 
     //Setting flags
@@ -142,46 +136,7 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Opening the fucking xml to populate the abbreviations map
-        XmlResourceParser xmlAbbreviations = getResources().getXml(R.xml.abbreviations);
-        try {
-            Boolean initalsFlag = false;
-            Boolean meaningFlag = false;
-            String initials = "";
-            String meaning = "";
-            int eventType = xmlAbbreviations.getEventType();
-            while (eventType != XmlPullParser.END_DOCUMENT) {
-                if (eventType == XmlPullParser.START_DOCUMENT) {
-                    //System.out.println("Start document");
-                } else if (eventType == XmlPullParser.START_TAG) {
-                    //System.out.println("Start tag " + xmlAbbreviations.getName());
-                    if(xmlAbbreviations.getName().equalsIgnoreCase("initials"))
-                        initalsFlag = true;
-                    else if(xmlAbbreviations.getName().equalsIgnoreCase("meaning"))
-                        meaningFlag = true;
-                } else if (eventType == XmlPullParser.END_TAG) {
-                    //System.out.println("End tag " + xmlAbbreviations.getName());
-                    if(xmlAbbreviations.getName().equalsIgnoreCase("initials"))
-                        initalsFlag = false;
-                    else if(xmlAbbreviations.getName().equalsIgnoreCase("meaning"))
-                        meaningFlag = false;
-                    else if(xmlAbbreviations.getName().equalsIgnoreCase("abbreviation"))
-                        abbreviations.put(initials, meaning);
-                } else if (eventType == XmlPullParser.TEXT) {
-                    //System.out.println("Text " + xmlAbbreviations.getText());
-                    if(initalsFlag)
-                        initials = xmlAbbreviations.getText();
-                    else if(meaningFlag)
-                        meaning = xmlAbbreviations.getText();
-                }
-                eventType = xmlAbbreviations.next();
-            }
-        } catch (XmlPullParserException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        //End of Opening the fucking xml
+        mainContext = this;
 
         //Global config
         InputMethodManager imm = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
@@ -325,42 +280,6 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
     }
     //End of speech
 
-    //Replace "_" for <i> tag
-    public String replaceUnderscore(String text){
-        boolean replaceFlag = true;
-        do {
-            if (replaceFlag) {
-                text = text.replaceFirst("_", "<i>");
-                replaceFlag = false;
-            } else {
-                text = text.replaceFirst("_", "</i>");
-                replaceFlag = true;
-            }
-        }
-        while(text.contains("_"));
-        return text;
-    }
-    //End of Replace
-
-    //Playing with Dicionário-Abertos's json
-    public String getDefinitions(JSONArray sense){
-        String finalText = "";
-        String def;
-        String gramGrp;
-        JSONObject usg;
-
-        for(int i = 0; i < sense.length(); i++){
-            JSONObject definition = sense.optJSONObject(i);
-            def = definition.optString("def");
-            gramGrp = definition.optString("gramGrp");
-            usg = definition.optJSONObject("usg");
-            def = replaceUnderscore(def);
-            finalText = finalText+"<p><strong>Definição "+(i+1)+" </strong>"+(gramGrp != "" ? ": <i>"+gramGrp +"</i>" : "")+(usg != null && usg.optString("#text") != "" ? " : <i>"+usg.optString("#text")+"</i>":"")+"<br/>"+def.replace("<br/>", "<br/><br/>")+"</p>";
-        }
-        return finalText;
-    }
-    //End of playing
-
     //Online Search mechanism
     public void onlineSearchWord(String word){
         textViewDefinitions.setText("");
@@ -373,22 +292,9 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
-                        Log.i("", "Response OK");
-                        String definitions = "";
-                        if(response.has("superEntry")){
-                            JSONArray superEntry = response.optJSONArray("superEntry");
-                            for(int i = 0; i < superEntry.length(); i++){
-                                JSONObject entry = superEntry.optJSONObject(i).optJSONObject("entry");
-                                JSONObject etym = entry.optJSONObject("etym");
-                                definitions = definitions + "<p><big><strong>Origem "+(i+1)+"</strong></big> "+(etym != null ? replaceUnderscore(etym.optString("#text")) : "")+"<br/><br/>" + getDefinitions(entry.optJSONArray("sense"))+"</p>";
-                            }
-                        }
-                        else if(response.has("entry")){
-                            JSONObject entry = response.optJSONObject("entry");
-                            JSONObject etym = entry.optJSONObject("etym");
-                            definitions ="<p><big><strong>Origem</strong></big> "+(etym != null ? replaceUnderscore(etym.optString("#text")) : "")+"<br/><br/>"+getDefinitions(entry.optJSONArray("sense"));
-                        }
-                        textViewDefinitions.setText(Html.fromHtml(definitions));
+                        dicionarioAbertoWord = new DicionarioAbertoWord(response, mainContext);
+                        textViewDefinitions.setText(Html.fromHtml(dicionarioAbertoWord.getFinalText()));
+                        informResults();
                     }
                 }, new Response.ErrorListener() {
 
@@ -418,13 +324,31 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
 
     //Read Definitions
     public void readDefinitions(){
-        String toSpeak = textViewDefinitions.getText().toString();
+        String toSpeak = Html.fromHtml(dicionarioAbertoWord.getFinalVoiceText()).toString();
         textToSpeech.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
     }
     //End of read definitions
 
+    //Inform Results
+    public void informResults(){
+        String toSpeak = "A pesquisa retornou "+dicionarioAbertoWord.getOrigins().size()+" origens e o total de "+dicionarioAbertoWord.getDefinitions().size()+" definições";
+        textToSpeech.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
+    }
+    //End of inform results
+
+    //No Command
+    public void noCommand(String command){
+        String toSpeak = "Comando "+command+" não reconhecido.";
+        textToSpeech.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
+    }
+    //End of No command
+
     //Voice commands control
     public void doVoiceCommand(ArrayList<String> match){
+        String originalMatch = "";
+        for(String temp : match){
+            originalMatch += " "+temp;
+        }
         switch (match.get(0)) {
             case "pesquisar":
                 editTextSearch.setText(match.get(1));
@@ -435,8 +359,13 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
                     case "definições":
                         readDefinitions();
                         break;
+                    default:
+                        noCommand(originalMatch);
                 }
                 break;
+            default:
+                noCommand(originalMatch);
+
         }
     }
     //End of voice commands control
