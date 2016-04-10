@@ -9,15 +9,13 @@
 
     <!-- end of permissions -->
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -33,7 +31,9 @@
         <activity
             android:name=".AboutActivity"
             android:label="@string/title_activity_about" />
-        <activity android:name=".ModelActivity"></activity>
+        <activity
+            android:name=".ResultsActivity"
+            android:label="@string/title_activity_results" />
     </application>
 
 </manifest>

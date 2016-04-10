@@ -9,6 +9,7 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
@@ -16,12 +17,12 @@ import java.util.Map;
 /**
  * Created by Minoru on 09/03/2016.
  */
-public class DicionarioAbertoWord {
+public class DicionarioAbertoWord implements Serializable {
     //Setting abbreviations
     private Map<String, String> abbreviations = new HashMap<String, String>();
     //End setting abbreviations
 
-    private final JSONObject response;
+    private transient final JSONObject response;
     private String finalText;
     private String finalVoiceText;
     private LinkedList<String> origins = new LinkedList<String>();
@@ -33,7 +34,7 @@ public class DicionarioAbertoWord {
         this.getApresentationText();
     }
 
-    public class Definition{
+    public class Definition implements Serializable{
         private String wordId = "";
         private String definition = "";
         private String origin = "";
@@ -141,7 +142,7 @@ public class DicionarioAbertoWord {
             JSONObject entry = response.optJSONObject("entry");
             String origin = entry.optJSONObject("etym") != null ? entry.optJSONObject("etym").optString("@orig") : "";
             String originText = entry.optJSONObject("etym") != null ? entry.optJSONObject("etym").optString("#text") : "";
-            String abbreviationOriginText = origin != null ? "(Do "+getAbbreviationMeaning(origin+".")+" "+replaceUnderscore(originText.substring(originText.lastIndexOf(" ")+1)) : "";
+            String abbreviationOriginText = origin != "" ? "(Do "+getAbbreviationMeaning(origin+".")+" "+replaceUnderscore(originText.substring(originText.lastIndexOf(" ")+1)) : "";
             finalText = "<p><big><strong>Origem</strong></big> "+replaceUnderscore(originText)+"<br/><br/>"+getDefinitions(entry.optJSONArray("sense"), origin,  entry.optString("@id"), false);
             finalVoiceText = "<p><big><strong>Origem</strong></big> "+abbreviationOriginText+" "+replaceUnderscore(originText.substring(originText.lastIndexOf(" ")+1))+"<br/><br/>"+getDefinitions(entry.optJSONArray("sense"), origin,  entry.optString("@id"), true);
             origins.add(origin);

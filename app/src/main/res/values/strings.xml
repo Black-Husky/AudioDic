@@ -19,4 +19,5 @@
     <string name="title_activity_abbreviations">AudioDic - Siglas e Abreviações</string>
     <string name="title_activity_settings">AudioDic - Configurações</string>
     <string name="title_activity_about">AudioDic - Sobre o Aplicativo</string>
+    <string name="title_activity_results">AudioDic - Resultados</string>
 </resources>

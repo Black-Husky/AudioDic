@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:id="@+id/itemSearch"
-        android:icon="@drawable/abc_ic_search_api_mtrl_alpha"
-        android:title="@string/menu_item_search"
-        app:showAsAction="always"/>
     <item android:id="@+id/menuItem"
         android:icon="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
         android:title="@string/menu_item_menu"
@@ -12,15 +8,19 @@
         <menu>
             <item android:id="@+id/menuItemHelp"
                 android:icon="@drawable/ic_help_outline_white_24dp"
-                android:title="@string/menu_item_help"/>
+                android:title="@string/menu_item_help"
+                android:onClick="openHelpActivity"/>
             <item android:id="@+id/menuItemAbbreviations"
                 android:title="@string/menu_item_abbreviations"
+                android:onClick="openAbbreviationsActivity"
                 android:icon="@drawable/ic_spellcheck_white_24dp"/>
             <item android:id="@+id/menuItemSettings"
                 android:title="@string/menu_item_configurations"
+                android:onClick="openSettingsActivity"
                 android:icon="@drawable/ic_settings_white_24dp"/>
             <item android:id="@+id/menuItemAbout"
                 android:title="@string/menu_item_about"
+                android:onClick="openAboutActivity"
                 android:icon="@drawable/ic_error_outline_white_24dp"/>
         </menu>
     </item>
