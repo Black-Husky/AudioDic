@@ -28,6 +28,11 @@ public class DicionarioAbertoWord implements Serializable {
     private LinkedList<String> origins = new LinkedList<String>();
     private LinkedList<Definition> definitions = new LinkedList<Definition>();
 
+    public DicionarioAbertoWord(Context context){
+        openAbbreviationsXml(context);
+        this.response = null;
+    }
+
     public DicionarioAbertoWord(JSONObject response, Context context){
         openAbbreviationsXml(context);
         this.response = response;

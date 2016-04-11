@@ -284,6 +284,21 @@ public abstract class VoiceActivity extends AppCompatActivity implements Recogni
     }
     //End of No command
 
+    //Voice Help
+    public void voiceCommands(){
+        String toSpeak = "<p><big>Comandos por Voz Disponíveis</big><br/><br/>" +
+                "<strong>- Pesquisar \"palavra\" : </strong>" +
+                "Pesquisa a palavra solicitada<br/>" +
+                "<strong>- Ler Definições : </strong>" +
+                "Lê a definição da palavra pesquisada;<br/>" +
+                "<strong>- Cancelar : </strong>" +
+                "Cancela a pesquisa;</br></p>" +
+                "<strong>- Comandos : </strong>" +
+                "Informa os comandos ofericidos pelo aplicativo.";
+        textToSpeech.speak(Html.fromHtml(toSpeak).toString(), TextToSpeech.QUEUE_ADD, null);
+    }
+    //End of Voice Help
+
     public void openResultsActivity(String results, String word){
         Intent intent;
         intent = new Intent(this, ResultsActivity.class);
@@ -303,6 +318,13 @@ public abstract class VoiceActivity extends AppCompatActivity implements Recogni
         }
         System.out.println(originalMatch);
         switch (match.get(0).toLowerCase()) {
+            case "comando":
+            case "comandos":
+                voiceCommands();
+                break;
+            case "busca":
+            case "buscar":
+            case "pesquisa":
             case "pesquisar":
                 informAction("Pesquisando...");
                 if(this.getClass().getSimpleName().equalsIgnoreCase("ResultsActivity")) {
@@ -344,7 +366,7 @@ public abstract class VoiceActivity extends AppCompatActivity implements Recogni
 
     @Override
     public void onRmsChanged(float rmsdB) {
-        Log.i(LOG_TAG, "onRmsChanged: " + rmsdB);
+        //Log.i(LOG_TAG, "onRmsChanged: " + rmsdB);
         progressBarMic.setProgress((int) rmsdB);
     }
 
