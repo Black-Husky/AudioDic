@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
@@ -49,12 +50,13 @@ public abstract class VoiceActivity extends AppCompatActivity implements Recogni
 
     //Setting common Variables
     private String LOG_TAG = "VoiceRecognitionActivity";
-    public TextToSpeech textToSpeech;
-    final Locale myLocale = new Locale("pt", "BR");
+    private TextToSpeech textToSpeech;
+    private final Locale myLocale = new Locale("pt", "BR");
     protected static DicionarioAbertoWord dicionarioAbertoWord;
     private Context mainContext = this;
     private SpeechRecognizer speech = null;
     private Intent recognizerIntent;
+    private Vibrator vibrator;
     // Instantiate the RequestQueue.
     private RequestQueue requestQueue;
     //End of Setting Common Variables
@@ -102,6 +104,7 @@ public abstract class VoiceActivity extends AppCompatActivity implements Recogni
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_voice);
 
+        vibrator = (Vibrator) this.mainContext.getSystemService(Context.VIBRATOR_SERVICE);
         requestQueue = Volley.newRequestQueue(this);
         requestQueue.cancelAll(new RequestQueue.RequestFilter() {
             @Override
@@ -136,6 +139,15 @@ public abstract class VoiceActivity extends AppCompatActivity implements Recogni
     });
 
     @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        textToSpeech.stop();
+        dicionarioAbertoWord = null;
+        cancelRequests();
+    }
+
+    @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
         super.dispatchTouchEvent(event);
         if (longClickFlag && event.getAction() == MotionEvent.ACTION_UP) {
@@ -157,6 +169,7 @@ public abstract class VoiceActivity extends AppCompatActivity implements Recogni
         if(flag){
             textToSpeech.stop();
             speech.startListening(recognizerIntent);
+            vibrator.vibrate(125);
             linearLayoutToHide.setVisibility(View.GONE);
             linearLayoutMic.setVisibility(View.VISIBLE);
             progressBarMic.setIndeterminate(true);
@@ -243,7 +256,7 @@ public abstract class VoiceActivity extends AppCompatActivity implements Recogni
                 }
             }
         });
-        int socketTimeout = 10000;
+        int socketTimeout = 2500;
         RetryPolicy policy = new DefaultRetryPolicy(socketTimeout, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
         jsObjRequest.setRetryPolicy(policy);
         // Add the request to the RequestQueue.
@@ -272,7 +285,12 @@ public abstract class VoiceActivity extends AppCompatActivity implements Recogni
 
     //Inform Results
     public void informResults(String word){
-        String toSpeak = "A pesquisa por "+word+" retornou "+dicionarioAbertoWord.getOrigins().size()+" origens e o total de "+dicionarioAbertoWord.getDefinitions().size()+" definições";
+        int originsSize = dicionarioAbertoWord.getOrigins().size();
+        int definitionsSize = dicionarioAbertoWord.getDefinitions().size();
+        String toSpeak = "A pesquisa por "+word+" retornou "+
+                originsSize+(originsSize > 1 ? (" origems ") : (" origem "))+
+                "e o total de "+
+                definitionsSize+(definitionsSize > 1 ? (" definições ") : (" definição "));
         textToSpeech.speak(toSpeak, TextToSpeech.QUEUE_ADD, null);
     }
     //End of inform results
@@ -318,6 +336,7 @@ public abstract class VoiceActivity extends AppCompatActivity implements Recogni
         }
         System.out.println(originalMatch);
         switch (match.get(0).toLowerCase()) {
+            case "ajuda":
             case "comando":
             case "comandos":
                 voiceCommands();
@@ -326,13 +345,16 @@ public abstract class VoiceActivity extends AppCompatActivity implements Recogni
             case "buscar":
             case "pesquisa":
             case "pesquisar":
-                informAction("Pesquisando...");
-                if(this.getClass().getSimpleName().equalsIgnoreCase("ResultsActivity")) {
-                    onlineSearchWord(match.get(1), true, (TextView) findViewById(R.id.textViewDefinitions));
+                if(match.size() > 1) {
+                    informAction("Pesquisando...");
+                    if (this.getClass().getSimpleName().equalsIgnoreCase("ResultsActivity")) {
+                        onlineSearchWord(match.get(1), true, (TextView) findViewById(R.id.textViewDefinitions));
+                    } else {
+                        onlineSearchWord(match.get(1), true, null);
+                    }
                 }
-                else{
-                    onlineSearchWord(match.get(1), true, null);
-                }
+                else
+                    informAction("Diga o comando pesquisar e logo em seguida a palavra desejada.");
                 break;
             case "ver":
             case "ler":

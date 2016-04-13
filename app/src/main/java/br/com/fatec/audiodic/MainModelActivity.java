@@ -1,10 +1,18 @@
 package br.com.fatec.audiodic;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
 public abstract class MainModelActivity extends VoiceActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+
+    }
 
     //Inflating menu
     @Override

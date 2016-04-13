@@ -30,9 +30,9 @@ public class HelpActivity extends ModelActivity {
                 "<strong>- Ler Definições : </strong>" +
                 "Lê a definição da palavra pesquisada;<br/>" +
                 "<strong>- Cancelar : </strong>" +
-                "Cancela a pesquisa;</br></p>" +
+                "Cancela a pesquisa;<br/>" +
                 "<strong>- Comandos : </strong>" +
-                "Informa os comandos ofericidos pelo aplicativo.";
+                "Informa os comandos ofericidos pelo aplicativo.</p>";
         String text3 = "<p><big>Como pesquisar por texto?</big><br/><br/><strong>Tela Inicial</strong><br/>Para digitar a palavra, clique na caixa de texto que aparece no meio da tela;<br/> Após digitar a palavra, clique no botão pesquisar!<br/><br/><strong>Tela de Resultados</strong><br/>Clique na Lupa no canto superior direito e repita o precesso citado no parágrafo anterior.</p>";
         String finalText = text1+text2+text3;
         textViewInfo.setText(Html.fromHtml(finalText));

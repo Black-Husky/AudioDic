@@ -3,6 +3,7 @@ package br.com.fatec.audiodic;
 //Importing
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -40,6 +41,14 @@ public class MainActivity extends MainModelActivity {
         //End of Getting fields
 
         startVoiceService(linearLayoutMain);
+
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                informAction("Bem Vindo Ao Dicionário Áudio Visual.");
+            }
+        }, 100);
     }
 
     public void onButtonSearchClick(View view){

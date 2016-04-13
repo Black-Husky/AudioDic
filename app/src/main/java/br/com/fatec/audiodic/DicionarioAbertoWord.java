@@ -152,7 +152,7 @@ public class DicionarioAbertoWord implements Serializable {
             finalVoiceText = "<p><big><strong>Origem</strong></big> "+abbreviationOriginText+" "+replaceUnderscore(originText.substring(originText.lastIndexOf(" ")+1))+"<br/><br/>"+getDefinitions(entry.optJSONArray("sense"), origin,  entry.optString("@id"), true);
             origins.add(origin);
         }
-        this.finalVoiceText = finalVoiceText;
+        this.finalVoiceText = finalVoiceText.replaceAll("etc", "Etcétera");
         this.finalText = finalText;
     }
 
