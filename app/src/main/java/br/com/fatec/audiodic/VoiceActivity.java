@@ -278,6 +278,13 @@ public abstract class VoiceActivity extends AppCompatActivity implements Recogni
     }
     //End of Inform Action
 
+    //Inform action flush
+    public void informActionFlush(String action){
+        String toSpeak = action;
+        textToSpeech.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
+    }
+    //End of Inform Action
+
     //Read Definitions
     public void readDefinitions(){
         if(dicionarioAbertoWord != null) {

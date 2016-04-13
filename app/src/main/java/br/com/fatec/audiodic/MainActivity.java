@@ -2,6 +2,7 @@ package br.com.fatec.audiodic;
 
 //Importing
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Menu;
@@ -46,9 +47,9 @@ public class MainActivity extends MainModelActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                informAction("Bem Vindo Ao Dicionário Áudio Visual. Toque duas vezes a tela rapidamente para ajuda.");
+                informActionFlush("Bem Vindo Ao Dicionário Áudio Visual. Toque duas vezes a tela rapidamente para ajuda.");
             }
-        }, 100);
+        }, 250);
     }
 
     public void onButtonSearchClick(View view){
@@ -66,5 +67,11 @@ public class MainActivity extends MainModelActivity {
     @Override
     public void onMenuItemSearchClick(MenuItem menuItem) {
 
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig)
+    {
+        super.onConfigurationChanged(newConfig);
     }
 }
