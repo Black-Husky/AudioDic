@@ -46,7 +46,7 @@ public class MainActivity extends MainModelActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                informAction("Bem Vindo Ao Dicionário Áudio Visual.");
+                informAction("Bem Vindo Ao Dicionário Áudio Visual. Toque duas vezes a tela rapidamente para ajuda.");
             }
         }, 100);
     }

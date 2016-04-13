@@ -136,6 +136,12 @@ public abstract class VoiceActivity extends AppCompatActivity implements Recogni
             longClickFlag = true;
             micControl(true);
         }
+
+        @Override
+        public boolean onDoubleTap(MotionEvent event) {
+            detailedHelp();
+            return true;
+        }
     });
 
     @Override
@@ -316,6 +322,13 @@ public abstract class VoiceActivity extends AppCompatActivity implements Recogni
         textToSpeech.speak(Html.fromHtml(toSpeak).toString(), TextToSpeech.QUEUE_ADD, null);
     }
     //End of Voice Help
+
+    //Detailed help
+    public void detailedHelp(){
+        String toSpeak = "Para começar a pesquisa : segure a tela até ouvir-se um som, e fale um comando, depois solte-a. Pava ouvir os comandos disponíveis, utilize o comando \"commandos\".";
+        textToSpeech.speak(Html.fromHtml(toSpeak).toString(), TextToSpeech.QUEUE_ADD, null);
+    }
+    //End of Detailed help
 
     public void openResultsActivity(String results, String word){
         Intent intent;
