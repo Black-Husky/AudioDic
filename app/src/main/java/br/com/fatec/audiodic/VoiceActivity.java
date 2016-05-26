@@ -237,7 +237,6 @@ public abstract class VoiceActivity extends AppCompatActivity implements Recogni
                     }
                 }
                 else{
-                    System.out.println(error.getClass());
                     linearLayoutLoading.setVisibility(View.GONE);
                     if (error.getClass().equals(TimeoutError.class)) {
                         // Show timeout error message
@@ -351,10 +350,9 @@ public abstract class VoiceActivity extends AppCompatActivity implements Recogni
     //Voice commands control
     public void doVoiceCommand(ArrayList<String> match){
         String originalMatch = "";
-        for(String temp : match){
-            originalMatch += " "+temp;
+        for(String temp : match) {
+            originalMatch += " " + temp;
         }
-        System.out.println(originalMatch);
         switch (match.get(0).toLowerCase()) {
             case "ajuda":
             case "comando":
@@ -393,7 +391,6 @@ public abstract class VoiceActivity extends AppCompatActivity implements Recogni
                 break;
             default:
                 noCommand(originalMatch);
-
         }
     }
     //End of voice commands control

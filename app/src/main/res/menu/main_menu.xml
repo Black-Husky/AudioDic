@@ -14,10 +14,6 @@
                 android:title="@string/menu_item_abbreviations"
                 android:onClick="openAbbreviationsActivity"
                 android:icon="@drawable/ic_spellcheck_white_24dp"/>
-            <item android:id="@+id/menuItemSettings"
-                android:title="@string/menu_item_configurations"
-                android:onClick="openSettingsActivity"
-                android:icon="@drawable/ic_settings_white_24dp"/>
             <item android:id="@+id/menuItemAbout"
                 android:title="@string/menu_item_about"
                 android:onClick="openAboutActivity"

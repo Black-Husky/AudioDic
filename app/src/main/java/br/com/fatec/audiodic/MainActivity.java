@@ -49,7 +49,7 @@ public class MainActivity extends MainModelActivity {
             public void run() {
                 informActionFlush("Bem Vindo Ao Dicionário Áudio Visual. Toque duas vezes a tela rapidamente para ajuda.");
             }
-        }, 250);
+        }, 500);
     }
 
     public void onButtonSearchClick(View view){
