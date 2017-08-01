@@ -156,7 +156,7 @@ public class DicionarioAbertoWord implements Serializable {
         this.finalText = finalText;
     }
 
-    //Opening the fucking xml to populate the abbreviations map
+    //Opening the xml to populate the abbreviations map
     private void openAbbreviationsXml(Context context){
         XmlResourceParser xmlAbbreviations = context.getResources().getXml(R.xml.abbreviations);
         try {
