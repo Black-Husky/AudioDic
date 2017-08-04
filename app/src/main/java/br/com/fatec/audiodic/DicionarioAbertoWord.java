@@ -197,7 +197,7 @@ public class DicionarioAbertoWord implements Serializable {
             e.printStackTrace();
         }
     }
-    //End of Opening the fucking xml
+    //End of Opening the xml
 
     private String getAbbreviationMeaning(String initials){
         initials = initials.toLowerCase();
